@@ -3,11 +3,11 @@ GET http://localhost:3001/api/notes
 
 ###
 
-GET http://localhost:3001/api/notes/5
+GET http://localhost:3001/api/notes/5c41c90e84d891c15dfa3431
 
 ###
 
-DELETE http://localhost:3001/api/notes/1
+DELETE http://localhost:3001/api/notes/62b13539732f6abcef360bdd
 
 ###
 
@@ -15,8 +15,16 @@ POST http://localhost:3001/api/notes/
 Content-Type: application/json
 
 {
-    "content": "Oscarin practicando NodeJS",
+    "content": "Estoy estudiando para ser un Fullstack JS 3",
     "important": true
 }
 
 ###
+
+PUT http://localhost:3001/api/notes/62b138b910af7a18de46302d
+Content-Type: application/json
+
+{
+    "content": "NodeJS me gusta mucho!",
+    "important": true
+}
