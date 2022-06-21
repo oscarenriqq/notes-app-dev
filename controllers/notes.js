@@ -8,7 +8,7 @@ notesRouter.get('/', (request, response) => {
 })
 
 notesRouter.get('/:id', (request, response, next) => {
-  const id = Number(request.params.id)
+  const id = request.params.id
 
   Note.findById(id)
     .then(note => {
